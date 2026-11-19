@@ -18,8 +18,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
-  <link rel="stylesheet" href="styles.css?v=1.0.0">
-  <script src="site.js?v=1.0.0" defer></script>
+  <link rel="stylesheet" href="styles.css?v=1.0.1">
+  <script src="site.js?v=1.0.1" defer></script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDCEBKFG3F"></script>
   <script>
@@ -77,10 +77,13 @@
       </div>
       <div class="hero-visual">
         <figure class="screenshot hud-shot">
-          <a class="image-link" href="assets/hud.png" data-preview="assets/hud.png" data-caption="播放提示 · 换歌浮窗" aria-label="放大查看：播放提示 · 换歌浮窗">
-            <img src="assets/hud.png" alt="换歌时屏幕顶部出现的 Liquid Glass 浮窗，显示圆形封面、歌名 evening 和歌手 Corn Wave" width="332" height="150" fetchpriority="high" decoding="async">
-          </a>
-          <figcaption><span>桌面上的实际浮窗，已开启「封面映入玻璃」。</span></figcaption>
+          <div class="hud-media">
+            <video class="hud-video" autoplay muted loop playsinline preload="auto" poster="assets/hud-demo-poster.png" width="400" height="196" aria-label="演示录屏：换歌时浮窗弹出，并在播放和暂停之间切换">
+              <source src="assets/hud-demo.mp4" type="video/mp4">
+              <img src="assets/hud-demo-poster.png" alt="换歌时屏幕顶部出现的 Liquid Glass 浮窗，显示圆形封面、歌名 evening 和歌手 Corn Wave" width="400" height="196">
+            </video>
+          </div>
+          <figcaption><span>实际录屏：换歌时弹出；播放时封面变大，暂停时显示播放图标。</span></figcaption>
         </figure>
         <div class="native-strip"><span>原生 SwiftUI</span><span>系统 Liquid Glass</span><span>不抢焦点</span></div>
       </div>
