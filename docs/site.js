@@ -59,3 +59,15 @@
   });
 })();
 
+(() => {
+  // Respect reduced-motion: stop the autoplaying demo and let the viewer start it.
+  const video = document.querySelector('.hud-video');
+  const query = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+  if (!video || !query) return;
+  const apply = () => {
+    if (query.matches) { video.pause(); video.controls = true; }
+    else { video.controls = false; video.play().catch(() => {}); }
+  };
+  query.addEventListener?.('change', apply);
+  apply();
+})();
