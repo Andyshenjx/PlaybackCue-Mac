@@ -18,8 +18,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="assets/app-icon.png">
   <link rel="apple-touch-icon" href="assets/app-icon.png">
-  <link rel="stylesheet" href="styles.css?v=1.0.1">
-  <script src="site.js?v=1.0.1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=1.0.2">
+  <script src="site.js?v=1.0.2" defer></script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDCEBKFG3F"></script>
   <script>
@@ -55,12 +55,12 @@
   <header class="site-header">
     <nav class="nav shell" aria-label="主导航">
       <a class="brand" href="index.html" aria-label="播放提示 首页" aria-current="page"><img src="assets/app-icon.png" alt="" width="36" height="36"><span>播放<strong>提示</strong></span></a>
-      <div class="nav-links"><a href="#features">功能</a><a href="#settings">个性化</a><a href="#players">播放器</a><a href="#faq">常见问题</a></div>
+      <div class="nav-links"><a href="#features">功能</a><a href="#settings">个性化</a><a href="#faq">常见问题</a></div>
       <div class="nav-actions">
-        <a class="button button-small" href="#download">下载 Mac 版 <span aria-hidden="true">↓</span></a>
+        <a class="button button-small" href="#download">下载 <span aria-hidden="true">↓</span></a>
         <details class="mobile-menu">
           <summary aria-label="网站导航"><span class="menu-lines" aria-hidden="true"></span><span class="visually-hidden">网站导航</span></summary>
-          <div class="mobile-menu-panel"><a href="#features">功能</a><a href="#settings">个性化</a><a href="#players">播放器</a><a href="#faq">常见问题</a><a href="#support">支持开发</a><a href="https://github.com/Andyshenjx/PlaybackCue-Mac">GitHub <span aria-hidden="true">↗</span></a></div>
+          <div class="mobile-menu-panel"><a href="#features">功能</a><a href="#settings">个性化</a><a href="#faq">常见问题</a><a href="https://github.com/Andyshenjx/PlaybackCue-Mac">GitHub <span aria-hidden="true">↗</span></a></div>
         </details>
       </div>
     </nav>
@@ -69,11 +69,11 @@
 
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>macOS 换歌提示 · 原生 Liquid Glass</p>
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>macOS 换歌提示</p>
         <h1 id="hero-title">换一首歌，<br><span class="accent">轻轻告诉你。</span></h1>
-        <p class="hero-description">歌曲变化时，屏幕顶部弹出一个小浮窗：歌名、歌手和封面，看一眼就够。1.5 秒后，它自己消失。</p>
-        <div class="hero-actions"><a class="button" href="#download">下载 Mac 版 <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/Andyshenjx/PlaybackCue-Mac">在 GitHub 查看 <span aria-hidden="true">↗</span></a></div>
-        <p class="hero-meta"><span>macOS 26+</span><span>Apple Silicon</span><span>免费使用</span></p>
+        <p class="hero-description">换歌时，屏幕顶部弹出歌名和封面，1.5 秒后自己消失。</p>
+        <div class="hero-actions"><a class="button" href="#download">下载 Mac 版 <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/Andyshenjx/PlaybackCue-Mac">GitHub <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-meta"><span>macOS 26+</span><span>Apple Silicon</span><span>免费</span></p>
       </div>
       <div class="hero-visual">
         <figure class="screenshot hud-shot">
@@ -83,98 +83,68 @@
               <img src="assets/hud-demo-poster.png" alt="换歌时屏幕顶部出现的 Liquid Glass 浮窗，显示圆形封面、歌名 evening 和歌手 Corn Wave" width="400" height="196">
             </video>
           </div>
-          <figcaption><span>实际录屏：换歌时弹出；播放时封面变大，暂停时显示播放图标。</span></figcaption>
+          <figcaption><span>实际录屏</span></figcaption>
         </figure>
-        <div class="native-strip"><span>原生 SwiftUI</span><span>系统 Liquid Glass</span><span>不抢焦点</span></div>
       </div>
     </section>
 
-    <nav class="start-path shell" aria-label="首次使用路径">
-      <p><strong>三步开始用。</strong>装好就不用管它。</p>
-      <div class="path-links">
-        <a href="#download"><span><small>01</small>下载 DMG</span><span aria-hidden="true">↓</span></a>
-        <a href="#download"><span><small>02</small>拖进应用程序</span><span aria-hidden="true">↓</span></a>
-        <a href="#faq"><span><small>03</small>放行后开始听歌</span><span aria-hidden="true">↓</span></a>
-      </div>
-    </nav>
-
     <section class="section shell" id="features" aria-labelledby="features-title">
-      <div class="section-heading"><div><p class="section-kicker">01 / 只做一件事</p><h2 id="features-title">该出现时出现，<br>不该打扰时安静。</h2></div><p>不做灵动岛，不接管媒体键。<br>只在换歌的那一刻，告诉你正在放什么。</p></div>
+      <div class="section-heading"><div><p class="section-kicker">01 / 功能</p><h2 id="features-title">只做一件事。</h2></div><p>支持 Apple Music 与 Spotify。</p></div>
       <div class="workflow-grid">
         <article class="workflow-card">
           <div class="workflow-top"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="4" y="13" width="32" height="14" rx="7"/><circle cx="11" cy="20" r="4"/><path d="M18 18h12M18 22.5h8"/></svg><span>01 / HUD</span></div>
-          <h3>换歌就提示。</h3><p>切到下一首、或从没有播放变为开始播放时弹出；启动 App 时不弹窗。显示时长可调，也可以在暂停时保持显示。</p>
-          <div class="tags"><span class="tag">歌名与歌手</span><span class="tag">圆形封面</span><span class="tag">播放状态</span></div>
+          <h3>换歌就提示。</h3><p>切歌或开始播放时弹出，启动时不打扰。</p>
         </article>
         <article class="workflow-card">
           <div class="workflow-top"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 10h24v20H8z"/><path d="M13 30 27 10M8 22l10-12M22 30l10-12"/></svg><span>02 / GLASS</span></div>
-          <h3>系统原生的玻璃。</h3><p>使用 macOS 的 Liquid Glass，可选通透或标准样式；还能给玻璃染上自己喜欢的颜色，或让封面映进玻璃里。</p>
-          <div class="tags"><span class="tag tag-accent">Liquid Glass</span><span class="tag">玻璃染色</span><span class="tag">封面映入</span></div>
+          <h3>原生 Liquid Glass。</h3><p>可以染色，也能让封面映进玻璃。</p>
         </article>
         <article class="workflow-card">
           <div class="workflow-top"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5v6M20 29v6M5 20h6M29 20h6"/><circle cx="20" cy="20" r="6"/></svg><span>03 / QUIET</span></div>
-          <h3>安静地待在后台。</h3><p>浮窗不抢键盘焦点，不打断正在用的 App。不占 Dock 和菜单栏；没有持续轮询，只在收到播放变化通知时读取。</p>
-          <div class="tags"><span class="tag">不抢焦点</span><span class="tag">无 Dock 图标</span><span class="tag">无轮询</span></div>
+          <h3>安静待在后台。</h3><p>不抢焦点，不占 Dock 和菜单栏。</p>
         </article>
       </div>
-      <div class="feature-footnote"><p><strong>封面从哪来？</strong> Apple Music 直接读取；拿不到时，从 Apple 公开的 iTunes 目录补取。</p><a class="text-link" href="#faq">了解隐私说明 <span aria-hidden="true">↓</span></a></div>
     </section>
 
     <section class="personalize-section section" id="settings" aria-labelledby="settings-title">
       <div class="shell">
         <div class="showcase">
-          <div class="showcase-copy"><p class="section-kicker">02 / 调成你的样子</p><h2 id="settings-title">每个细节，<br><span class="accent">改完立刻看到。</span></h2><p>设置窗口右侧用你正在听的歌和系统壁纸实时预览。位置、尺寸、透明度，改一下，桌面上的浮窗也跟着变。</p>
-            <ul class="check-list"><li>通透 / 标准玻璃，可加自选颜色的染色</li><li>封面映入玻璃：柔化 0–40 pt，不透明度 0–100%</li><li>左上角、顶部中央或右上角，边距可调</li><li>动态宽度、高度、文字大小、阴影和整体不透明度</li><li>歌手、圆形封面、状态图标可单独开关</li><li>显示时长与出入场模糊，修改自动保存</li></ul>
+          <div class="showcase-copy"><p class="section-kicker">02 / 个性化</p><h2 id="settings-title">改完，<br><span class="accent">立刻看到。</span></h2><p>实时预览，自动保存。</p>
+            <ul class="check-list"><li>玻璃样式、染色与封面映入</li><li>位置、尺寸与透明度</li><li>显示时长与动画</li></ul>
           </div>
           <div class="showcase-media">
             <figure class="screenshot">
-              <a class="image-link" href="assets/settings.png" data-preview="assets/settings.png" data-caption="设置窗口与实时预览" aria-label="放大查看：设置窗口与实时预览">
+              <a class="image-link" href="assets/settings.png" data-preview="assets/settings.png" data-caption="设置窗口" aria-label="放大查看：设置窗口">
                 <img src="assets/settings.png" alt="播放提示的设置窗口：左侧分类、中间玻璃效果选项、右侧浮窗实时预览" width="2000" height="1360" loading="lazy" decoding="async">
                 <span class="image-zoom" aria-hidden="true">↗</span>
               </a>
-              <figcaption><span>玻璃效果、外观、内容、位置、动画、应用六个分类。</span><span class="zoom-label" aria-hidden="true">点击放大 ↗</span></figcaption>
+              <figcaption><span>设置窗口</span><span class="zoom-label" aria-hidden="true">点击放大 ↗</span></figcaption>
             </figure>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section shell" id="players" aria-labelledby="players-title">
-      <div class="section-heading"><div><p class="section-kicker">03 / 支持的播放器</p><h2 id="players-title">用你平时<br>听歌的 App。</h2></div><p>播放器换歌，浮窗就会出现。<br>不需要额外设置。</p></div>
-      <div class="device-summary">
-        <article><span class="tag tag-accent">Apple Music</span><h3>支持</h3><p>歌曲信息和封面都直接从「音乐」读取。第一次读取封面时，系统会询问是否允许访问「音乐」。</p></article>
-        <article><span class="tag tag-accent">Spotify</span><h3>支持</h3><p>通过 Spotify 发出的系统通知识别换歌、暂停和停止；封面来自系统和 Spotify 提供的图片。</p></article>
-        <article><span class="tag">其他播放器</span><h3>视系统而定</h3><p>取决于 macOS 是否向第三方应用提供正在播放的信息，目前未逐一测试。</p></article>
-      </div>
-      <p class="section-note">歌曲信息来自 macOS 私有的 MediaRemote 框架和播放器发出的系统通知。苹果以后更新系统，可能让部分功能失效。</p>
-    </section>
-
     <section class="download-section shell" id="download" aria-labelledby="download-title">
-      <div class="download-copy"><div class="download-title"><img src="assets/app-icon.png" alt="" width="50" height="50" loading="lazy"><p class="section-kicker">PLAYBACK CUE / FOR MAC</p></div><h2 id="download-title">下一首歌，<br>换个方式出场。</h2><p>下载 DMG，把「播放提示」拖进「应用程序」文件夹。</p><a class="button" href="https://github.com/Andyshenjx/PlaybackCue-Mac/releases/latest">前往 GitHub Releases <span aria-hidden="true">↗</span></a><p class="download-meta">macOS 26 或更新版本 · Apple Silicon Mac · 1.0</p></div>
+      <div class="download-copy"><div class="download-title"><img src="assets/app-icon.png" alt="" width="50" height="50" loading="lazy"><p class="section-kicker">PLAYBACK CUE / FOR MAC</p></div><h2 id="download-title">下载播放提示</h2><a class="button" href="https://github.com/Andyshenjx/PlaybackCue-Mac/releases/latest">前往 GitHub Releases <span aria-hidden="true">↗</span></a><p class="download-meta">1.0 · macOS 26+ · Apple Silicon</p></div>
       <div class="download-notes"><h3>第一次打开</h3>
-        <ol>
-          <li>双击「播放提示」，如果系统提示无法验证开发者，先点「完成」。</li>
-          <li>打开「系统设置 → 隐私与安全性」，在页面下方点「仍要打开」。</li>
-          <li>之后会出现设置窗口；关掉它，App 继续在后台工作。</li>
-        </ol>
-        <p>当前版本没有 Developer ID 签名和苹果公证，请只从本项目的 GitHub Releases 下载。</p>
+        <p>被系统拦下时，到「系统设置 → 隐私与安全性」点「仍要打开」。App 未经苹果公证，请只从 GitHub 下载。</p>
       </div>
     </section>
 
     <section class="faq-section section shell" id="faq" aria-labelledby="faq-title">
-      <div class="faq-intro"><p class="section-kicker">开始前的小问题</p><h2 id="faq-title">想再确认一下？</h2><p>没找到答案的话，可以在 GitHub 提交 Issue。</p><a class="text-link" href="https://github.com/Andyshenjx/PlaybackCue-Mac/issues">提交问题 <span aria-hidden="true">↗</span></a></div>
+      <div class="faq-intro"><h2 id="faq-title">常见问题</h2><a class="text-link" href="https://github.com/Andyshenjx/PlaybackCue-Mac/issues">提交问题 <span aria-hidden="true">↗</span></a></div>
       <div class="accordion">
-        <details><summary>关掉设置窗口后，App 还在运行吗？</summary><p>在。播放提示不在 Dock 和菜单栏显示图标，关掉设置窗口后继续在后台监听换歌。想再改设置，在「应用程序」或启动台里重新打开它即可；要彻底退出，在设置的「应用」分类里点「退出播放提示」。</p></details>
-        <details><summary>为什么打开时提示无法验证开发者？</summary><p>当前版本没有 Developer ID 签名和苹果公证。确认是从本项目 GitHub Releases 下载的后，到「系统设置 → 隐私与安全性」里点「仍要打开」。</p></details>
-        <details><summary>Apple Music 的封面不显示怎么办？</summary><p>播放提示需要读取「音乐」才能拿到封面。如果之前拒绝过权限，到「系统设置 → 隐私与安全性 → 自动化」里，允许「播放提示」访问「音乐」。拿不到时，App 也会尝试从 iTunes 目录补取。</p></details>
-        <details><summary>会联网或收集数据吗？</summary><p>不收集、不上传使用数据，没有统计代码。只有在播放器提供不了封面时，才会用歌名、歌手、专辑（或歌曲 ID）查询 Apple 公开的 iTunes 目录（itunes.apple.com）下载封面图片。</p></details>
-        <details><summary>Intel Mac 或旧版 macOS 能用吗？</summary><p>不能。当前安装包只支持 Apple Silicon Mac，并需要 macOS 26 或更新版本（Liquid Glass 需要新系统）。</p></details>
+        <details><summary>支持哪些播放器？</summary><p>Apple Music 和 Spotify。其他播放器取决于系统，未逐一测试。</p></details>
+        <details><summary>关掉设置窗口后还在运行吗？</summary><p>在，它在后台工作。重新打开 App 可再次设置，在「应用」分类里可以退出。</p></details>
+        <details><summary>Apple Music 封面不显示？</summary><p>到「系统设置 → 隐私与安全性 → 自动化」，允许它访问「音乐」。</p></details>
+        <details><summary>会收集数据吗？</summary><p>不会。只在拿不到封面时，向 Apple 的 iTunes 目录查询封面图片。</p></details>
       </div>
     </section>
 
     <section class="support-section shell" id="support" aria-labelledby="support-title">
-      <div class="support-copy"><p class="section-kicker">让工具继续变好</p><h2 id="support-title">喜欢它，欢迎支持开发。</h2><p>分享使用体验、提交问题，或在 GitHub 留下一颗 Star，都能帮助项目继续完善。你也可以通过赞赏支持这个独立项目，赞赏不影响任何功能。</p><a class="text-link" href="https://github.com/Andyshenjx/PlaybackCue-Mac">在 GitHub 关注项目 <span aria-hidden="true">↗</span></a><p class="support-small">感谢每一份反馈与支持。</p></div>
-      <figure class="support-code"><a class="image-link" href="assets/andy-support.jpg" data-preview="assets/andy-support.jpg" data-caption="支持 Andyshenjx 的独立开发" aria-label="放大查看赞赏码"><img src="assets/andy-support.jpg" alt="Andyshenjx 的微信赞赏码，点击可放大查看" width="1152" height="1152" loading="lazy" decoding="async"><span class="image-zoom" aria-hidden="true">↗</span></a><figcaption>微信扫一扫 · 点击可放大</figcaption></figure>
+      <div class="support-copy"><h2 id="support-title">喜欢的话，欢迎支持。</h2><p>赞赏自愿，不影响任何功能。</p><a class="text-link" href="https://github.com/Andyshenjx/PlaybackCue-Mac">给项目点个 Star <span aria-hidden="true">↗</span></a></div>
+      <figure class="support-code"><a class="image-link" href="assets/andy-support.jpg" data-preview="assets/andy-support.jpg" data-caption="支持 Andyshenjx 的独立开发" aria-label="放大查看赞赏码"><img src="assets/andy-support.jpg" alt="Andyshenjx 的微信赞赏码，点击可放大查看" width="1152" height="1152" loading="lazy" decoding="async"><span class="image-zoom" aria-hidden="true">↗</span></a><figcaption>微信扫一扫</figcaption></figure>
     </section>
 
   </main>
@@ -182,10 +152,10 @@
   <footer class="footer shell">
     <div class="footer-top">
       <a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="32" height="32"><span>播放<strong>提示</strong></span></a>
-      <nav aria-label="页脚导航"><a href="https://github.com/Andyshenjx/PlaybackCue-Mac">GitHub ↗</a><a href="https://github.com/Andyshenjx/PlaybackCue-Mac/releases/latest">下载 ↗</a><a href="https://github.com/Andyshenjx/PlaybackCue-Mac/issues">问题反馈 ↗</a><a href="#support">支持开发</a></nav>
+      <nav aria-label="页脚导航"><a href="https://github.com/Andyshenjx/PlaybackCue-Mac">GitHub ↗</a><a href="https://github.com/Andyshenjx/PlaybackCue-Mac/issues">问题反馈 ↗</a></nav>
     </div>
-    <p>Made by <a href="https://github.com/Andyshenjx">Andyshenjx</a> <span aria-hidden="true">·</span> 免费使用，本项目只发布安装包。</p>
-    <p class="legal">软件按「原样」提供，不附带任何担保。Apple Music、Spotify 等名称归各自权利人所有，本项目与它们无关联。本网站使用 Google Analytics 统计访问情况；App 本身不含任何统计代码。</p>
+    <p>Made by <a href="https://github.com/Andyshenjx">Andyshenjx</a> <span aria-hidden="true">·</span> 软件按「原样」提供。</p>
+    <p class="legal">本网站使用 Google Analytics 统计访问；App 不含统计代码。Apple Music、Spotify 归各自权利人所有。</p>
   </footer>
   <dialog class="lightbox" aria-labelledby="lightbox-caption">
     <div class="lightbox-toolbar"><p id="lightbox-caption">应用截图</p><div class="lightbox-actions"><a class="lightbox-original" href="assets/settings.png" target="_blank" rel="noopener noreferrer">查看原图 ↗</a><button class="lightbox-close" type="button" aria-label="关闭放大图片">关闭 <span aria-hidden="true">×</span></button></div></div>
