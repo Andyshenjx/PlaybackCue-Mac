@@ -553,3 +553,7 @@ tbody tr:last-child > * { border-bottom: 0; }
 .lightbox { border-color: #c3cddc; }
 .lightbox::backdrop { background: #101828bc; }
 @media (max-width: 640px) { .download-notes { border-top-color: #3a4864; } }
+/* Lean copy: tighter spacing where paragraphs were removed */
+.faq-intro .text-link { margin-top: 18px; }
+.download-copy h2 + .button { margin-top: 24px; }
+.support-copy h2 + p { margin-top: 12px; }
